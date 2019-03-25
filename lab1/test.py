@@ -26,10 +26,10 @@ class PythonApi(unittest.TestCase):
     def test_add_games(self):
         utc = arrow.utcnow()
 
-        game = {"date": "2015-03-10",
-                "teams": "Bayern - Chelsea",
-                "score": "1 - 1(4 - 2)",
-                "city" : "Munich"
+        game = {"date": "2013-25-05",
+                "teams": "Borussia Dortmund - Bayern Munich",
+                "score": "1 - 2",
+                "city" : "London"
                 }
 
         res = requests.post('http://127.0.0.1:5000/lab1/api/v1.0/games', json=game)
@@ -42,11 +42,11 @@ class PythonApi(unittest.TestCase):
     def test_edit_game(self):
         utc = arrow.utcnow()
 
-        game = {"date": "2011-28-05",
-                "teams": "Bayern - Chelsea",
-                "score": "1 - 1(4 - 3)",
-                "city" : "Munich",
-                "id": "6"
+        game = {"date": "2013-25-05",
+                "teams": "Borussia - Bayern",
+                "score": "1 - 2",
+                "city" : "London"
+                #"id": "6"
                 }
         res = requests.put('http://127.0.0.1:5000/lab1/api/v1.0/games/6', json=game)
         if res.status_code == 200:
