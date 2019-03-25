@@ -1,1 +1,1 @@
-# comp_arch
+# lab works from computer architecture
