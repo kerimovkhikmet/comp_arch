@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <title>Python: module app</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body bgcolor="#f0f0f8">
+
+    <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+        <tr bgcolor="#7799ee">
+            <td valign=bottom>&nbsp;<br>
+                <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>app</strong></big></big>
+                </font>
+            </td>
+            <td align=right valign=bottom>
+                <font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a
+                        href="file:/home/khikmet/ac_lab1/app.py">/home/khikmet/ac_lab1/app.py</a></font>
+            </td>
+        </tr>
+    </table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-</tt></p>
+    <p>
+        <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+            <tr bgcolor="#aa55cc">
+                <td colspan=3 valign=bottom>&nbsp;<br>
+                    <font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font>
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+                <td>&nbsp;</td>
+                <td width="100%">
+                    <table width="100%" summary="list">
+                        <tr>
+                            <td width="25%" valign=top><a href="flask.blueprints.html">flask.blueprints</a><br>
+                                <a href="flask.cli.html">flask.cli</a><br>
+                                <a href="flask.config.html">flask.config</a><br>
+                            </td>
+                            <td width="25%" valign=top><a href="flask.ctx.html">flask.ctx</a><br>
+                                <a href="flask.globals.html">flask.globals</a><br>
+                                <a href="flask.helpers.html">flask.helpers</a><br>
+                            </td>
+                            <td width="25%" valign=top><a href="flask.json.html">flask.json</a><br>
+                                <a href="flask.sessions.html">flask.sessions</a><br>
+                                <a href="flask.signals.html">flask.signals</a><br>
+                            </td>
+                            <td width="25%" valign=top><a href="flask.templating.html">flask.templating</a><br>
+                                <a href="flask.wrappers.html">flask.wrappers</a><br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+                <tr bgcolor="#eeaa77">
+                    <td colspan=3 valign=bottom>&nbsp;<br>
+                        <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+                    <td>&nbsp;</td>
+                    <td width="100%">
+                        <dl>
+                            <dt><a name="-add_game"><strong>add_game</strong></a>()</dt>
+                            <dd><tt>This&nbsp;function&nbsp;add&nbsp;new&nbsp;game&nbsp;in&nbsp;db<br>
+                                    return:&nbsp;json&nbsp;with&nbsp;the&nbsp;game</tt></dd>
+                        </dl>
+                        <dl>
+                            <dt><a name="-delete_game"><strong>delete_game</strong></a>(game_id)</dt>
+                            <dd><tt>Delete&nbsp;game&nbsp;by&nbsp;id<br>
+                                    param&nbsp;game_id:&nbsp;id<br>
+                                    return:&nbsp;bool</tt></dd>
+                        </dl>
+                        <dl>
+                            <dt><a name="-escape"><strong>escape</strong></a>(...)</dt>
+                            <dd><tt><a href="#-escape">escape</a>(s)&nbsp;-&gt;&nbsp;markup<br>
+                                    &nbsp;<br>
+                                    Convert&nbsp;the&nbsp;characters&nbsp;&amp;,&nbsp;&lt;,&nbsp;&gt;,&nbsp;',&nbsp;and&nbsp;"&nbsp;in&nbsp;string&nbsp;s&nbsp;to&nbsp;HTML-safe<br>
+                                    sequences.&nbsp;&nbsp;Use&nbsp;this&nbsp;if&nbsp;you&nbsp;need&nbsp;to&nbsp;display&nbsp;text&nbsp;that&nbsp;might&nbsp;contain<br>
+                                    such&nbsp;characters&nbsp;in&nbsp;HTML.&nbsp;&nbsp;Marks&nbsp;return&nbsp;value&nbsp;as&nbsp;markup&nbsp;string.</tt>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><a name="-get_game"><strong>get_game</strong></a>(game_id)</dt>
+                            <dd><tt>This&nbsp;function&nbsp;return&nbsp;game&nbsp;by&nbsp;id<br>
+                                    First&nbsp;find&nbsp;a&nbsp;game&nbsp;make&nbsp;uri&nbsp;for&nbsp;id<br>
+                                    and&nbsp;return&nbsp;json<br>
+                                    param&nbsp;game_id:&nbsp;id<br>
+                                    return:&nbsp;json</tt></dd>
+                        </dl>
+                        <dl>
+                            <dt><a name="-get_games"><strong>get_games</strong></a>()</dt>
+                            <dd><tt>This&nbsp;function&nbsp;return&nbsp;all&nbsp;games<br>
+                                    return:&nbsp;json&nbsp;with&nbsp;games</tt></dd>
+                        </dl>
+                        <dl>
+                            <dt><a name="-make_public_game"><strong>make_public_game</strong></a>(game)</dt>
+                            <dd><tt>Make&nbsp;from&nbsp;with&nbsp;id&nbsp;-&gt;&nbsp;uri<br>
+                                    0&nbsp;-&gt;&nbsp;<a
+                                        href="http://127.0.0.1:5000/lab1/api/v1.0/games/0">http://127.0.0.1:5000/lab1/api/v1.0/games/0</a><br>
+                                    param&nbsp;task:<br>
+                                    return:</tt></dd>
+                        </dl>
+                        <dl>
+                            <dt><a name="-update_game"><strong>update_game</strong></a>(game_id)</dt>
+                            <dd><tt>Edit&nbsp;game&nbsp;by&nbsp;id&nbsp;use<br>
+                                    param&nbsp;game_id:&nbsp;id&nbsp;of&nbsp;element&nbsp;measurement<br>
+                                    return:&nbsp;json&nbsp;with&nbsp;the&nbsp;game&nbsp;which&nbsp;was&nbsp;edit</tt>
+                            </dd>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+                    <tr bgcolor="#55aa55">
+                        <td colspan=3 valign=bottom>&nbsp;<br>
+                            <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td>
+                        <td>&nbsp;</td>
+                        <td width="100%"><strong>app</strong> = &lt;Flask 'app'&gt;<br>
+                            <strong>appcontext_popped</strong> = &lt;blinker.base.NamedSignal object at 0x7fad47c6f898;
+                            'appcontext-popped'&gt;<br>
+                            <strong>appcontext_pushed</strong> = &lt;blinker.base.NamedSignal object at 0x7fad47c6f9e8;
+                            'appcontext-pushed'&gt;<br>
+                            <strong>appcontext_tearing_down</strong> = &lt;blinker.base.NamedSignal object at
+                            0x7fad47c62e48; 'appcontext-tearing-down'&gt;<br>
+                            <strong>before_render_template</strong> = &lt;blinker.base.NamedSignal object at
+                            0x7fad47c62a20; 'before-render-template'&gt;<br>
+                            <strong>current_app</strong> = &lt;LocalProxy unbound&gt;<br>
+                            <strong>g</strong> = &lt;LocalProxy unbound&gt;<br>
+                            <strong>games</strong> = [{'city': 'Kiev', 'date': '2018-26-05', 'id': 1, 'score': '3 - 1',
+                            'teams': 'Real Madrid - Liverpool'}, {'city': 'Cardiff', 'date': '2017-03-06', 'id': 2,
+                            'score': '4 - 1', 'teams': 'Real Madrid - Juventus'}, {'city': 'Milan', 'date':
+                            '2016-28-05', 'id': 3, 'score': '1 - 1 (5 - 3)', 'teams': 'Real Madrid - Atletico Madrid'},
+                            {'city': 'Berlin', 'date': '2015-05-06', 'id': 4, 'score': '3 - 1', 'teams': 'Barcelona -
+                            Juventus'}, {'city': 'Lisbon', 'date': '2014-24-05', 'id': 5, 'score': '4 - 1', 'teams':
+                            'Real Madrid - Atletico Madrid'}]<br>
+                            <strong>got_request_exception</strong> = &lt;blinker.base.NamedSignal object at
+                            0x7fad47c62c88; 'got-request-exception'&gt;<br>
+                            <strong>json_available</strong> = True<br>
+                            <strong>message_flashed</strong> = &lt;blinker.base.NamedSignal object at 0x7fad47c6f940;
+                            'message-flashed'&gt;<br>
+                            <strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+                            <strong>request_finished</strong> = &lt;blinker.base.NamedSignal object at 0x7fad47c62be0;
+                            'request-finished'&gt;<br>
+                            <strong>request_started</strong> = &lt;blinker.base.NamedSignal object at 0x7fad47c62a90;
+                            'request-started'&gt;<br>
+                            <strong>request_tearing_down</strong> = &lt;blinker.base.NamedSignal object at
+                            0x7fad47c62c50; 'request-tearing-down'&gt;<br>
+                            <strong>session</strong> = &lt;LocalProxy unbound&gt;<br>
+                            <strong>signals_available</strong> = True<br>
+                            <strong>template_rendered</strong> = &lt;blinker.base.NamedSignal object at 0x7fad47c629e8;
+                            'template-rendered'&gt;</td>
+                    </tr>
+                </table>
+</body>
+
+</html>
